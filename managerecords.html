@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Patient Records</title>
+  <link rel="stylesheet" href="C:/Users/karis/Downloads/MedicalClinicWebsite/css/style.css">
+  <style>
+    main {
+      background-color: rgba(0, 0, 0, 0.6);
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #00d4ff;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #e0f7fa;
+    }
+
+    a {
+      color: #4dd0e1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body style="background-image: url('C:/Users/karis/Downloads/MedicalClinicWebsite/img/img5.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 100vh; margin: 0;">
+  <div id="menu"></div>
+  <main>
+    <h1>Patient Record Management</h1>
+	<form id="recordForm" style="display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin: 0 auto; color: White;">
+  <label>
+    Patient Name:
+    <input type="text" id="name" style="width: 100%; padding: 8px;">
+  </label>
+
+  <label>
+    Age:
+    <input type="number" id="age" style="width: 100%; padding: 8px;">
+  </label>
+
+  <label>
+    Diagnosis:
+    <input type="text" id="diagnosis" style="width: 100%; padding: 8px;">
+  </label>
+
+  <div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
+    <button type="button" onclick="createRecord()">Create</button>
+    <button type="button" onclick="readRecord()">Read</button>
+    <button type="button" onclick="updateRecord()">Update</button>
+    <button type="button" onclick="deleteRecord()">Delete</button>
+  </div>
+</form>
+    <div id="recordOutput"></div>
+  </main>
+  <script src="C:/Users/karis/Downloads/MedicalClinicWebsite/js/menu.js"></script>
+  <script src="C:/Users/karis/Downloads/MedicalClinicWebsite/js/crud.js"></script>
+</body>
+</html>
